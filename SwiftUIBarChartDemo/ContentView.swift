@@ -27,15 +27,15 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             VStack{
-                ChartView(viewMonths: viewMonths, chartType: .AreaMark)
+                ChartView(viewMonths: viewMonths, chartType: .AreaMark, title: "YouTube Views")
                 
-                ChartView(viewMonths: viewMonths, chartType: .LineMark)
+                ChartView(viewMonths: viewMonths, chartType: .LineMark, title: "YouTube Views")
                 
-                ChartView(viewMonths: viewMonths, chartType: .PointMark)
+                ChartView(viewMonths: viewMonths, chartType: .PointMark, title: "YouTube Views")
                 
-                ChartView(viewMonths: viewMonths, chartType: .RectangleMark)
+                ChartView(viewMonths: viewMonths, chartType: .RectangleMark, title: "YouTube Views")
                 
-                ChartView(viewMonths: viewMonths, chartType: .BarMark)
+                ChartView(viewMonths: viewMonths, chartType: .BarMark, title: "YouTube Views")
             }
         }
     }

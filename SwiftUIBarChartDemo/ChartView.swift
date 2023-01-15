@@ -20,11 +20,12 @@ struct ChartView: View {
     
     var viewMonths = [ViewMonth]()
     var chartType: ChartType = .BarMark
+    var title: String = ""
     
     var body: some View {
         VStack(alignment: .leading, spacing: 4) {
             
-            Text("YouTube Views")
+            Text(title)
             
             Text("Total: \(viewMonths.reduce(0, {$0 + $1.viewCount}))")
                 .fontWeight(.semibold)
